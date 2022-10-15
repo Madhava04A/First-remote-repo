@@ -31,6 +31,6 @@ btn.addEventListener('click', function(){
         taskContainer.appendChild(modal);
     }
 
-    input.innerText = "";
+    input.value= "";
    
 })
