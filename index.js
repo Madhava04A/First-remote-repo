@@ -11,7 +11,7 @@ btn.addEventListener('click', function(){
     modal.classList.add('task');
 
     let list = document.createElement('li');
-    list.classList.add('input');
+    
     list.innerText = `${input.value}`;
     modal.appendChild(list);
 
@@ -22,7 +22,7 @@ btn.addEventListener('click', function(){
 
     let deleteTask = document.createElement('button');
     deleteTask.classList.add('delete');
-    deleteTask.innerHTML = `<i class="fa-solid fa-trash-can-xmark"></i>`;
+    deleteTask.innerHTML = `<i style='font-size:24px' class='fas'>&#xf2ed;</i>`;
     modal.appendChild(deleteTask);
 
     if(input.value ===""){
