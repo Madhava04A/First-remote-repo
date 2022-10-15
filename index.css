@@ -37,6 +37,7 @@ input{
     font-weight: 600;
     width: 15%;
     margin-left: 0.5rem;
+    cursor: pointer;
 }
 #add-btn:hover{
     width: 15%;
@@ -46,4 +47,39 @@ input{
     box-shadow: 2px 2px black;
     transition: .5s;
 }
+
+/* adding styles to events in task-container */
+
+.task{
+    background-color: white;
+    position: absolute;
+    bottom:24%;
+    right:22%;
+    height: 8rem;
+    width:55%;
+    border: 2px solid black;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 2px 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task li{
+    list-style:none;
+    font-size: 2rem;
+    padding: 0 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 1rem;
+    width:70%;
+    
+}
+.task button{
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    padding:0.3rem 0.4rem;
+    box-shadow: 2px 2px black;
+}
+
 
