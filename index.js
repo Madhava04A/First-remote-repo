@@ -22,7 +22,7 @@ btn.addEventListener('click', function(){
 
     let deleteTask = document.createElement('button');
     deleteTask.classList.add('delete');
-    deleteTask.innerHTML = `<i style='font-size:24px' class='fas'>&#xf2ed;</i>`;
+    deleteTask.innerHTML = `<i style="font-size:24px" class="fa">&#xf05e;</i>`;
     modal.appendChild(deleteTask);
 
     if(input.value ===""){
