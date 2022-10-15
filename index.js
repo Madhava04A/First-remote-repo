@@ -11,7 +11,6 @@ btn.addEventListener('click', function(){
     modal.classList.add('task');
 
     let list = document.createElement('li');
-    
     list.innerText = `${input.value}`;
     modal.appendChild(list);
 
@@ -42,7 +41,7 @@ btn.addEventListener('click', function(){
     })
 
     deleteTask.addEventListener('click', function(e){
-        e.target.parentElement.remove();
+        e.target.parentElement.parentElement.remove();
     })
    
 })
