@@ -18,11 +18,14 @@ btn.addEventListener('click', function(){
     let done = document.createElement('button');
     done.classList.add('done');
     done.innerHTML = `<i class="fa fa-check"></i>`;
+    done.style.backgroundColor = "green";
     modal.appendChild(done);
+    
 
     let deleteTask = document.createElement('button');
     deleteTask.classList.add('delete');
     deleteTask.innerHTML = `<i style="font-size:24px" class="fa">&#xf05e;</i>`;
+    deleteTask.style.backgroundColor = "red";
     modal.appendChild(deleteTask);
 
     if(input.value ===""){
