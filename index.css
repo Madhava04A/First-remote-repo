@@ -5,20 +5,20 @@
 }
 body{
     background: url(./images/bookblock-11-15cYOiQc-unsplash.jpg) no-repeat center center/cover;
+
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
+    
     overflow: auto; 
 }
 #add-task{
+    margin:30% 20% 0% 20% ;
     background-color: white;
     border: 2px solid black;
     padding: 2rem 2rem;
     border-radius: 2rem;
     width:55%;
     box-shadow: 1px 1px 1px 1px black;
-    margin-top: -6rem;
+    justify-content: center;
     display: flex;
 }
 input{
@@ -52,22 +52,20 @@ input{
 /* adding styles to events in task-container */
 
 .task{
-    background-color: white;
-    position: absolute;
-    bottom:24%;
-    right:22%;
-    height: 8rem;
+    background-color: white;   
+    height: 6rem;
     width:55%;
     border: 2px solid black;
-    border-radius: 2rem;
-    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 1.5rem;
+    box-shadow: 2px 2px 2px 1px black;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 2rem 20.2%;
 }
 .task li{
     list-style:none;
-    font-size: 2rem;
+    font-size: 1.4rem;
     padding: 0 1rem;
     font-family: 'Times New Roman', Times, serif;
     margin-right: 1rem;
