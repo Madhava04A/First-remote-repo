@@ -1,6 +1,10 @@
+               //      variables 
+
 const btn = document.getElementById('add-btn');
 const input = document.getElementById('task-input');
 const taskContainer = document.getElementById('task-container');
+
+             // event listener to add tasks 
 
 btn.addEventListener('click', function(){
     let modal = document.createElement('div');
@@ -21,10 +25,12 @@ btn.addEventListener('click', function(){
     deleteTask.innerHTML = `<i class="fa-solid fa-trash-can-xmark"></i>`;
     modal.appendChild(deleteTask);
 
-    if(input.innerText ===""){
+    if(input.value ===""){
         alert("You did not enter anything");
     } else{
         taskContainer.appendChild(modal);
     }
+
+    input.innerText = "";
    
 })
