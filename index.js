@@ -26,6 +26,7 @@ btn.addEventListener('click', function(){
     deleteTask.classList.add('delete');
     deleteTask.innerHTML = `<i style="font-size:24px" class="fa">&#xf05e;</i>`;
     deleteTask.style.backgroundColor = "red";
+    deleteTask.style.width = "3rem";
     modal.appendChild(deleteTask);
 
     if(input.value ===""){
@@ -35,5 +36,13 @@ btn.addEventListener('click', function(){
     }
 
     input.value= "";
+
+    done.addEventListener('click', function(){
+        done.previousElementSibling.style.textDecoration = "line-through";
+    })
+
+    deleteTask.addEventListener('click', function(e){
+        e.target.parentElement.remove();
+    })
    
 })
