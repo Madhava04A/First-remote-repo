@@ -40,8 +40,8 @@ btn.addEventListener('click', function(){
         done.previousElementSibling.style.textDecoration = "line-through";
     })
 
-    deleteTask.addEventListener('click', function(e){
-        e.target.parentElement.parentElement.remove();
+    deleteTask.addEventListener('click', function(){
+        this.parentElement.remove();
     })
    
 })
