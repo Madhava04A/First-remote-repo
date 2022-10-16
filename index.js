@@ -42,6 +42,8 @@ btn.addEventListener('click', function(){
 
     deleteTask.addEventListener('click', function(){
         this.parentElement.remove();
+        
     })
+    
    
 })
