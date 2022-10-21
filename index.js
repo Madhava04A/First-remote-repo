@@ -44,6 +44,5 @@ btn.addEventListener('click', function(){
         this.parentElement.remove();
         
     })
-    
-   
+      
 })
