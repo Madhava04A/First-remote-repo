@@ -1,9 +1,12 @@
 {
+  "homepage": "https://madhava04a.github.io/to-do-list",
   "name": "to-do-list",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
