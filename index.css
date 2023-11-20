@@ -4,21 +4,23 @@
   box-sizing: border-box;
 }
 body {
+  width: 100%;
   background: url(./images/bookblock-11-15cYOiQc-unsplash.jpg) no-repeat center
     center/cover;
   min-height: 100vh;
   overflow: auto;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 #add-task {
-  margin: 3% 20% 0% 20%;
+  margin: 3% auto 0% auto;
   background-color: white;
   border: 2px solid black;
-  padding: 2rem 2rem;
+  padding: 1rem;
   border-radius: 2rem;
   width: 55%;
   box-shadow: 1px 1px 1px 1px black;
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
 }
 input {
@@ -50,25 +52,31 @@ input {
 }
 
 /* adding styles to events in task-container */
-
+#task-container {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 .task {
+  padding: 0.5rem;
+  padding-left: 1rem;
   background-color: white;
-  height: 6rem;
-  width: 55%;
+  width: 60%;
   border: 2px solid black;
   border-radius: 1.5rem;
   box-shadow: 2px 2px 2px 1px black;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 2rem 20.2%;
+  margin: 0 auto 1rem auto;
 }
 .task li {
   list-style: none;
   font-size: 1.4rem;
-  padding: 0 1rem;
   font-family: "Times New Roman", Times, serif;
-  margin-right: 1rem;
+  text-wrap: wrap;
   width: 70%;
 }
 .task button {
@@ -78,4 +86,15 @@ input {
   margin-right: 1rem;
   padding: 0.3rem 0.4rem;
   box-shadow: 2px 2px black;
+}
+
+/*     responsive design code      */
+
+@media screen and (max-width: 700px) {
+  #add-task {
+    width: 95%;
+  }
+  .task {
+    width: 90%;
+  }
 }
