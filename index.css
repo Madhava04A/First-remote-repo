@@ -1,82 +1,81 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
-body{
-    background: url(./images/bookblock-11-15cYOiQc-unsplash.jpg) no-repeat center center/cover;
-    min-height: 100vh;
-    overflow: auto; 
+body {
+  background: url(./images/bookblock-11-15cYOiQc-unsplash.jpg) no-repeat center
+    center/cover;
+  min-height: 100vh;
+  overflow: auto;
+  position: relative;
 }
-#add-task{
-    margin:30% 20% 0% 20% ;
-    background-color: white;
-    border: 2px solid black;
-    padding: 2rem 2rem;
-    border-radius: 2rem;
-    width:55%;
-    box-shadow: 1px 1px 1px 1px black;
-    justify-content: center;
-    display: flex;
+#add-task {
+  margin: 3% 20% 0% 20%;
+  background-color: white;
+  border: 2px solid black;
+  padding: 2rem 2rem;
+  border-radius: 2rem;
+  width: 55%;
+  box-shadow: 1px 1px 1px 1px black;
+  justify-content: center;
+  display: flex;
 }
-input{
-    padding:0.5rem 1rem;
-    margin-right: 1rem;
-    border-radius: 1rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    width:80%;
-    color: rgb(65, 64, 64);
+input {
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 80%;
+  color: rgb(65, 64, 64);
 }
-#add-btn{
-    padding: 0 0.4rem;
-    border-radius: 0.7rem;
-    box-shadow: 1px 1px black;
-    font-size: 2rem;
-    font-weight: 600;
-    width: 15%;
-    margin-left: 0.5rem;
-    cursor: pointer;
+#add-btn {
+  padding: 0 0.4rem;
+  border-radius: 0.7rem;
+  box-shadow: 1px 1px black;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 15%;
+  margin-left: 0.5rem;
+  cursor: pointer;
 }
-#add-btn:hover{
-    width: 15%;
-    height: 10%;
-    background-color: antiquewhite;
-    font-size: 2.1rem;
-    box-shadow: 2px 2px black;
-    transition: .5s;
+#add-btn:hover {
+  width: 15%;
+  height: 10%;
+  background-color: antiquewhite;
+  font-size: 2.1rem;
+  box-shadow: 2px 2px black;
+  transition: 0.5s;
 }
 
 /* adding styles to events in task-container */
 
-.task{
-    background-color: white;   
-    height: 6rem;
-    width:55%;
-    border: 2px solid black;
-    border-radius: 1.5rem;
-    box-shadow: 2px 2px 2px 1px black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 20.2%;
+.task {
+  background-color: white;
+  height: 6rem;
+  width: 55%;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  box-shadow: 2px 2px 2px 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 20.2%;
 }
-.task li{
-    list-style:none;
-    font-size: 1.4rem;
-    padding: 0 1rem;
-    font-family: 'Times New Roman', Times, serif;
-    margin-right: 1rem;
-    width:70%;
-    
+.task li {
+  list-style: none;
+  font-size: 1.4rem;
+  padding: 0 1rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-right: 1rem;
+  width: 70%;
 }
-.task button{
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    margin-right: 1rem;
-    padding:0.3rem 0.4rem;
-    box-shadow: 2px 2px black;
+.task button {
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  padding: 0.3rem 0.4rem;
+  box-shadow: 2px 2px black;
 }
-
-
